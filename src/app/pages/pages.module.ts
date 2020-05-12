@@ -28,4 +28,4 @@ import { PAGES_ROUTES } from './pages.routes';
     ]
 })
 
-export class PageModule { }
+export class PageModule {}
