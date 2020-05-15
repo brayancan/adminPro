@@ -10,10 +10,15 @@ import { PageModule } from './pages/pages.module';
 // Temporal
 import { FormsModule } from '@angular/forms';
 
+// servicios
+import { ServiceModule } from './services/service.module';
+
 // componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+
+
 
 import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 
@@ -26,7 +31,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 import { PagesComponent } from './pages/pages.component';
 // import { DonasComponent } from './components/donas/donas.component';
-import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
+// import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +54,8 @@ import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.com
     BrowserModule,
     APP_ROUTES,
     PageModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
